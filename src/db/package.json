@@ -1,0 +1,24 @@
+{
+  "name": "@db/drizzle",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./index.ts",
+  "scripts": {
+    "db:create": "createdb collabdev",
+    "db:generate": "drizzle-kit generate",
+    "db:introspect": "drizzle-kit introspect",
+    "db:check": "drizzle-kit check:pg",
+    "db:migrate": "tsx ./migrate.ts",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.33.0",
+    "pg": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.11",
+    "@types/pg": "^8.11.10",
+    "drizzle-kit": "^0.24.2"
+  }
+}
